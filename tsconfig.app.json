@@ -5,11 +5,24 @@
     "types": ["vite/client"],
     "allowArbitraryExtensions": true,
 
+    /* 路径别名，和 vite.config.ts 的 resolve.alias 保持一致 */
+    "paths": {
+      "@/*": ["./src/*"],
+      "#build/ui/*": ["./node_modules/.nuxt-ui/ui/*"]
+    },
+
     /* Linting */
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    /* Nuxt UI 自动生成，Vite/`vp dev` 跑过之后才存在，所以进 .gitignore */
+    "auto-imports.d.ts",
+    "components.d.ts"
+  ]
 }

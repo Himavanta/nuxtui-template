@@ -1,1 +1,3 @@
-vp staged
+#!/bin/sh
+vp staged || exit 1
+vp exec vue-tsc -b --force || exit 1

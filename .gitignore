@@ -15,6 +15,7 @@ dist-ssr
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+!.vscode/settings.json
 .idea
 .DS_Store
 *.suo
@@ -22,11 +23,21 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-!.vscode/
-!.vscode/settings.json
-!.vscode/extensions.json
+
+# Git hooks：调度器由 `vp config` 生成，项目自己的钩子脚本要提交
+.vite-hooks/_
 
 # dotenv environment variable files
 .env
 .env.*
 !.env.example
+
+# Nuxt UI / unplugin 生成的类型声明，只在 vite 跑起来后存在，不要提交
+auto-imports.d.ts
+components.d.ts
+typed-router.d.ts
+
+# 缓存
+.vite
+.eslintcache
+*.tsbuildinfo

@@ -13,6 +13,11 @@
     "moduleDetection": "force",
     "noEmit": true,
 
+    /* Nuxt UI 主题类型提示（vite.config.ts 里调 ui({ ui: {...} }) 时有用） */
+    "paths": {
+      "#build/ui": ["./node_modules/.nuxt-ui/ui"]
+    },
+
     /* Linting */
     "noUnusedLocals": true,
     "noUnusedParameters": true,

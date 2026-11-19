@@ -1,0 +1,22 @@
+/*
+ * 设计变量集中在这里，改主题只改这一个文件。
+ * Tailwind v4 用 @theme 把变量注册成工具类（--color-primary 会生成 bg-primary / text-primary）。
+ * Nuxt UI 的语义色（--ui-*）由 @nuxt/ui 自动生成，不要在这里重复定义。
+ */
+@theme {
+  /* 品牌主色，Nuxt UI 的 primary 会引用它 */
+  --color-primary-50: oklch(97% 0.02 264);
+  --color-primary-100: oklch(94% 0.04 264);
+  --color-primary-200: oklch(89% 0.07 264);
+  --color-primary-300: oklch(82% 0.11 264);
+  --color-primary-400: oklch(72% 0.16 264);
+  --color-primary-500: oklch(62% 0.19 264);
+  --color-primary-600: oklch(54% 0.2 264);
+  --color-primary-700: oklch(46% 0.18 264);
+  --color-primary-800: oklch(38% 0.15 264);
+  --color-primary-900: oklch(31% 0.12 264);
+  --color-primary-950: oklch(24% 0.09 264);
+
+  /* 业务自定义间距、圆角等按需追加 */
+  --radius-card: 0.75rem;
+}

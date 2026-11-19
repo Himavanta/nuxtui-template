@@ -5,22 +5,30 @@
   "type": "module",
   "scripts": {
     "dev": "vp dev",
-    "build": "vue-tsc -b && vp build",
     "preview": "vp preview",
-    "prepare": "vp config"
+    "prepare": "vp config",
+    "check": "vp check",
+    "check:fix": "vp check --fix",
+    "typecheck": "vue-tsc -b",
+    "build:app": "vp build",
+    "build": "vue-tsc -b && vp build"
   },
   "dependencies": {
+    "@iconify-json/tabler": "^1.2.46",
     "@nuxt/ui": "^4.12.2",
-    "@tabler/icons-vue": "^3.52.0",
+    "@vueuse/core": "^15.0.0",
     "ky": "^2.2.0",
-    "sass": "^1.108.2",
-    "tailwindcss": "^4.3.5",
-    "vue": "^3.5.45"
+    "pinia": "^4.1.0",
+    "vue": "^3.5.45",
+    "vue-router": "^5.5.1"
   },
   "devDependencies": {
+    "@tabler/icons-vue": "^3.52.0",
     "@types/node": "^26.6.6",
     "@vitejs/plugin-vue": "^6.0.11",
     "@vue/tsconfig": "^0.9.1",
+    "sass": "^1.108.2",
+    "tailwindcss": "^4.3.5",
     "typescript": "~6.0.3",
     "vite": "catalog:",
     "vite-plus": "catalog:",

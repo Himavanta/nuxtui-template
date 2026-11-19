@@ -12,3 +12,7 @@ peerDependencyRules:
     - vite
   allowedVersions:
     vite: '*'
+# 让 Vite+ 独占 Node.js / pnpm 版本管理，避免和 pnpm 自带的 runtime 管理打架
+# https://viteplus.dev/guide/env
+runtimeOnFail: ignore
+pmOnFail: ignore
