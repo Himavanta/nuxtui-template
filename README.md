@@ -3,26 +3,10 @@
 Vue 3 项目模版：TypeScript + Vite+ + Nuxt UI + Pinia + Vue Router + ky。
 面向 AI coding 场景做了约定与工程化配置，开箱即用。
 
-## 用这个模版新建项目
-
-不要 `git clone` 后手动删 `.git`，也不要用 `vp create` 从零搭。三种方式选一种：
+## 快速开始
 
 ```bash
-# 1. degit（推荐）：只取快照，不带 git 历史，最干净
-npx degit Himavanta/nuxtui-template my-app
-
-# 2. GitHub「Use this template」按钮：需要先在仓库 Settings 勾选 Template repository
-
-# 3. 需要保留 git 历史时用 clone
-git clone git@github.com:Himavanta/nuxtui-template.git my-app && rm -rf my-app/.git
-```
-
-然后：
-
-```bash
-cd my-app
-git init        # degit 只下快照，不带 .git
-vp install      # 装依赖，同时按 package.json 的声明切换 Node / pnpm 版本
+vp install
 vp dev
 ```
 
