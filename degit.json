@@ -1,6 +1,6 @@
 [
   {
     "action": "remove",
-    "files": ["degit.json", "USAGE.md"]
+    "files": ["USAGE.md"]
   }
 ]
