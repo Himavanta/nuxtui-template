@@ -179,7 +179,7 @@ src/
 
 ```bash
 vp dev              # 开发
-vp run build        # 类型检查 + 构建（CI 用这个）
+vp run build        # 类型检查 + 构建
 vp run typecheck    # 只做类型检查
 vp check            # 格式化 + lint（不加 --fix 不会改文件）
 vp check --fix      # 格式化 + lint + 自动修复

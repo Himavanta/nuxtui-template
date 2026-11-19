@@ -30,15 +30,15 @@ vp dev
 
 ## 命令
 
-| 命令               | 作用                             |
-| ------------------ | -------------------------------- |
-| `vp dev`           | 启动开发服务器                   |
-| `vp run build`     | 类型检查 + 生产构建（CI 用这个） |
-| `vp run build:app` | 只构建，不做类型检查             |
-| `vp run typecheck` | 类型检查                         |
-| `vp check`         | 格式化 + lint 检查（不改文件）   |
-| `vp check --fix`   | 格式化 + lint + 自动修复         |
-| `vp preview`       | 预览构建产物                     |
+| 命令               | 作用                           |
+| ------------------ | ------------------------------ |
+| `vp dev`           | 启动开发服务器                 |
+| `vp run build`     | 类型检查 + 生产构建            |
+| `vp run build:app` | 只构建，不做类型检查           |
+| `vp run typecheck` | 类型检查                       |
+| `vp check`         | 格式化 + lint 检查（不改文件） |
+| `vp check --fix`   | 格式化 + lint + 自动修复       |
+| `vp preview`       | 预览构建产物                   |
 
 > ⚠️ `vp <name>` 优先匹配内置命令，`vp build` 只构建不检查类型。跑 npm script
 > 必须加 `run`：`vp run build`。
