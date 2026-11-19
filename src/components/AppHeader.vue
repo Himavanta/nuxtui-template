@@ -1,7 +1,7 @@
 <template>
   <header :class="$style.AppHeader">
     <div :class="$style.inner">
-      <RouterLink to="/" :class="$style.brand">Maimai</RouterLink>
+      <RouterLink to="/" :class="$style.brand">{{ appTitle }}</RouterLink>
 
       <nav :class="$style.nav">
         <RouterLink v-for="link in links" :key="link.to" :to="link.to" :class="$style.link">
@@ -29,6 +29,9 @@ const links = [
   { to: '/', label: '首页' },
   { to: '/about', label: '关于' }
 ]
+
+// 与 index.html 的 <title>、.env 的 VITE_APP_TITLE 保持一致
+const appTitle = import.meta.env.VITE_APP_TITLE || 'Vue App'
 
 const colorMode = useColorMode()
 

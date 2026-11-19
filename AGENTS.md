@@ -1,7 +1,9 @@
-# maimai-apptemplate
+# nuxtui-template
 
-团队前端项目模版。Vue 3 + TypeScript + Vite+ + Nuxt UI + Pinia + Vue Router + ky。
-新项目从这个仓库复制（GitHub template / degit），不要 `vp create` 从零搭。
+Vue 3 项目模版。TypeScript + Vite+ + Nuxt UI + Pinia + Vue Router + ky。
+
+新项目用 `npx degit Himavanta/nuxtui-template <dir>` 或 GitHub 的「Use this template」
+创建，不要 `vp create` 从零搭，也不要 git clone 后手动删 `.git`。
 
 ## 动手前先查 llms.txt
 

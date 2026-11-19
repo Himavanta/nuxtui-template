@@ -4,8 +4,8 @@ import { useAuthStore } from '@/stores/auth'
 
 import { routes } from './routes'
 
-/** 需要在构建时就固定下来的应用标题，和 index.html 保持一致 */
-const APP_TITLE = import.meta.env.VITE_APP_TITLE || 'Maimai'
+/** 应用标题。新项目：改这里的兜底值 + index.html 的 <title>，或用 VITE_APP_TITLE 覆盖 */
+const APP_TITLE = import.meta.env.VITE_APP_TITLE || 'Vue App'
 
 export const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
